@@ -1,12 +1,132 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Matthew Vastarelli</title>
-    <link rel="SHORTCUT ICON" href="http://www.saraandlarry.com/wp-content/uploads/2014/01/favicon-copperplate-m.jpg" />
-    <link rel="icon" href="http://www.saraandlarry.com/wp-content/uploads/2014/01/favicon-copperplate-m.jpg" type="image/ico" />
-  </head>
-  <body>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset='utf-8' />
+		<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+		<title>Matthew Vastarelli</title>
 
+		<link rel="SHORTCUT ICON" href="http://www.saraandlarry.com/wp-content/uploads/2014/01/favicon-copperplate-m.jpg" />
+		<link rel="icon" href="http://www.saraandlarry.com/wp-content/uploads/2014/01/favicon-copperplate-m.jpg" type="image/ico" />
+    <script src="https://use.fontawesome.com/4abf8875aa.js"></script>
+		<link rel="stylesheet" href="css/maximage.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8" />
+
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+		<!--[if IE 6]>
+			<style type="text/css" media="screen">
+				.gradient {display:none;}
+			</style>
+		<![endif]-->
+	</head>
+	<body>
+
+
+
+
+		<!-- Main Navigation -->
+		<nav class="main-nav">
+			<ul>
+				<li><a href="#home" class="active">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Home Page -->
+		<section class="content show" id="home">
+			<h1>Matthew Vastarelli</h1>
+			<h5>Student, Computer Science Generalist.</h5>
+			<p><a href="#about">More info &#187;</a></p>
+		</section>
+
+		<!-- About Page -->
+		<section class="content hide" id="about">
+			<h1>About</h1>
+			<h5>A little bit about my self.</h5>
+			<p>I am Matthew Vastarelli a current graduate student at the University of New Haven pursuing my interests in the field of computer science. My program of study is an M.S in computer science with a concentration in computer programing. Current interests in the field center around software development, and cyber security in addition to other pursuits of machine learning and game development. In my time as a student, I have given tech demos at private organizations as well as assisting with coding and cybersecurity summer programs such as Gen Cyber. In addition, I will be assisting with Project Lead The Way a program to inform high school teachers on how to conduct STEM classes. I am aiming for internships as well as other opportunities in my field of study.  </p>
+		</section>
+
+		<!-- Contact Page -->
+		<section class="content hide" id="contact">
+			<h1>Contact</h1>
+			<h5>Get in touch.</h5>
+			<p>Email: mvast1@unh.newhaven.edu<br /> Email: mattvastarelli@gmail.com<br/>
+			<a href="https://www.linkedin.com/in/matthew-vastarelli-446504146/"><i class="fa fa-linkedin-square" aria-hidden="true"> Linken In </i></a>
+ 			<a href="https://github.com/MattVastarelli"><i class="fa fa-github" aria-hidden="true"> Git Hub </i></a></p>
+
+		</section>
+
+		<!-- Background Slides -->
+		<div id="maximage">
+			<div>
+				<img src="images/backgrounds/blake-connally-373084.jpg" alt="" />
+				<img class="gradient" src="images/backgrounds/gradient.png" alt="" />
+			</div>
+			<div>
+				<img src="images/backgrounds/eloise-ambursley-355862.jpg" alt="" />
+				<img class="gradient" src="images/backgrounds/gradient.png" alt="" />
+			</div>
+			<div>
+				<img src="images/backgrounds/clem-onojeghuo-174738.jpg" alt="" />
+				<img class="gradient" src="images/backgrounds/gradient.png" alt="" />
+			</div>
+			<div>
+				<img src="images/backgrounds/lewis-ngugi-186309.jpg" alt="" />
+				<img class="gradient" src="images/backgrounds/gradient.png" alt="" />
+			</div>
+			<div>
+				<img src="images/backgrounds/luke-chesser-48.jpg" alt="" />
+				<img class="gradient" src="images/backgrounds/gradient.png" alt="" />
+			</div>
+		</div>
+
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+		<script src="js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullscreen.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.ba-hashchange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				$('#maximage').maximage({
+					cycleOptions: {
+						fx: 'fade',
+						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
+						timeout: 5000,
+						prev: '#arrow_left',
+						next: '#arrow_right',
+						pause: 0,
+						before: function(last,current){
+							if(!$.browser.msie){
+								// Start HTML5 video when you arrive
+								if($(current).find('video').length > 0) $(current).find('video')[0].play();
+							}
+						},
+						after: function(last,current){
+							if(!$.browser.msie){
+								// Pauses HTML5 video when you leave it
+								if($(last).find('video').length > 0) $(last).find('video')[0].pause();
+							}
+						}
+					},
+					onFirstImageLoaded: function(){
+						jQuery('#cycle-loader').hide();
+						jQuery('#maximage').fadeIn('fast');
+					}
+				});
+
+				// Helper function to Fill and Center the HTML5 Video
+				jQuery('video,object').maximage('maxcover');
+
+			});
+		</script>
   </body>
 </html>
