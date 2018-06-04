@@ -1,0 +1,50 @@
+body {
+	font-family: 'Roboto';
+}
+
+#welcome {
+	margin-top: 40px;
+	background-color: #fafafa;
+}
+
+#about {
+	background-color: #fafafa;
+}
+
+#projects {
+	margin-top: 40px;
+	background-color: #fafafa;
+}
+
+#contact {
+	margin-top: 40px;
+	background-color: #fafafa;
+}
+
+#header {
+	font-weight: 700;
+}
+
+#sh {
+	text-indent: 20px;
+	font-weight: 500;
+}
+p {
+	font-size: 13pt;
+	text-indent: 20px;
+	text-decoration-color:  #212121;
+}
+
+h5 i {
+	margin-left: 15px;
+	padding: 10px;
+}
+
+a i {
+	margin-right: 10px;
+}
+
+a {
+	color:  #212121;
+	text-decoration: none;
+}
