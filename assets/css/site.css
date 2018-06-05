@@ -4,21 +4,27 @@ body {
 
 #welcome {
 	margin-top: 40px;
-	background-color: #fafafa;
+	
 }
 
-#about {
+#links {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: #fafafa;
+	line-height: 2;
+}
+.row {
+	margin-top: 20px;
+	margin-bottom: 10px;
 	background-color: #fafafa;
 }
 
 #projects {
 	margin-top: 40px;
-	background-color: #fafafa;
 }
 
 #contact {
 	margin-top: 40px;
-	background-color: #fafafa;
 }
 
 #header {
