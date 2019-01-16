@@ -26,7 +26,7 @@ function hideScenes(num){
 //-------------------------------------------------------------------------
 $("#aboutLink").click(function() {
     hideScenes(1);
-    $( "#projects" ).show('fast', function() {
+    $( "#about" ).show('fast', function() {
 
     });
 });
